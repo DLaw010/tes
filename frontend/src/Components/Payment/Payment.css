@@ -1,0 +1,75 @@
+
+.payment-container {
+  display: flex;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Warna abu asal */
+}
+
+.payment-container.form-filled {
+  background-color: #007bff; /* Warna biru saat form terisi */
+}
+.payment-form, .cart-summary-container {
+  flex: 1;
+}
+
+.payment-form {
+  flex: 1;
+  margin-right: 20px; /* Memberi jarak antara kedua bagian */
+}
+
+.personal-info-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.personal-info-form input[type="text"],
+.personal-info-form input[type="email"],
+.personal-info-form input[type="tel"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cart-summary {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.cart-summary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-details p {
+  margin-bottom: 10px;
+}
+
+.cart-summary button {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover {
+  background-color: #0056b3;
+}
+
+.cart-summary .error {
+  color: red;
+  margin-top: 10px;
+}

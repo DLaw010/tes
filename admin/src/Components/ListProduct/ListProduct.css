@@ -1,0 +1,135 @@
+.list-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 740px;
+    padding: 10px 50px;
+    margin: 30px;
+    border-radius: 6px;
+    background: white;
+}
+.listproduct-format-main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    gap: 100px;
+    width: 100%;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 15px;
+    font-weight: 600;
+}
+.listproduct-format{
+    align-items: center;
+    font-weight: 500;
+}
+.listproduct-product-icon{
+    height: 80px;
+}
+.listproduct-remove-icon{
+    cursor: pointer;
+    margin: auto;
+}
+.listproduct-allproducts{
+    overflow-y: auto;
+}
+.listproduct-search {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .listproduct-search input[type="text"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px; /* Sesuaikan lebar sesuai kebutuhan */
+    transition: width 0.3s ease-in-out;
+    height: 25px;
+  }
+  
+  .listproduct-search input[type="text"]:focus {
+    width: 300px; /* Lebar ketika dalam mode fokus */
+  }
+  
+  .listproduct-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 10px;
+    border: none;
+    background-color: #007bff; /* Sesuaikan warna latar belakang */
+    color: #fff; /* Sesuaikan warna teks */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .listproduct-search button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+  }
+  @media (max-width: 1280px) {
+    .list-product {
+        width: 90%;
+    }
+    .listproduct-format-main {
+        gap: 50px;
+    }
+    .listproduct-search input[type="text"] {
+        width: 150px;
+    }
+    .listproduct-search button {
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .list-product {
+        width: 85%;
+    }
+    .listproduct-format-main {
+        gap: 30px;
+        font-size: 12px;
+    }
+    .listproduct-search input[type="text"] {
+        width: 120px;
+    }
+    .listproduct-search button {
+        padding: 4px 6px;
+    }
+}
+
+@media(max-width:800px){
+    .list-product{
+        box-sizing: border-box;
+        width: 95%;
+        height: 100%;
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+    .listproduct-format-main{
+        padding: 15px 0px;
+        color: #454545;
+        font-size: 12px;
+    }
+    .listproduct-product-icon{
+        height: 60px;
+        
+    }
+    @media (max-width: 500px) {
+        .list-product {
+            width: 80%;
+            padding: 10px 20px;
+        }
+        .listproduct-format-main {
+            gap: 20px;
+            font-size: 10px;
+        }
+        .listproduct-search input[type="text"] {
+            width: 100px;
+        }
+        .listproduct-search button {
+            padding: 2px 4px;
+        }
+    }
+}

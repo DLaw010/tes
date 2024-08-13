@@ -1,0 +1,147 @@
+.shopcategory-banner{
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+}
+.shopcategory-indexsort{
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopcategory-search {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .shopcategory-search input[type="text"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px; /* Sesuaikan lebar sesuai kebutuhan */
+    transition: width 0.3s ease-in-out;
+    height: 25px;
+  }
+  
+  .shopcategory-search input[type="text"]:focus {
+    width: 300px; /* Lebar ketika dalam mode fokus */
+  }
+  
+  .shopcategory-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 10px;
+    border: none;
+    background-color: #007bff; /* Sesuaikan warna latar belakang */
+    color: #fff; /* Sesuaikan warna teks */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .shopcategory-search button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+  }
+  
+  .shopcategory-sort {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px; /* Mengatur bentuk oval */
+    border: 1px solid #888;
+    max-width: 300px; /* Lebar maksimum untuk menjaga tampilan tetap rapi */
+    margin-right: 20px; /* Jarak antara kotak kategori dan kotak pencarian */
+}
+
+.shopcategory-sort select {
+    flex: 1; /* Menggunakan sebanyak mungkin ruang yang tersedia */
+    padding: 8px 10px; /* Penyesuaian kecil untuk tata letak yang lebih baik */
+    border-radius: 0 40px 40px 0; /* Mengatur sudut oval hanya pada sisi kanan */
+    border: 1px solid #888;
+    transition: border-color 0.3s ease-in-out;
+    background-color: transparent; /* Hapus warna latar belakang agar terlihat lebih bersih */
+    outline: none; /* Hapus garis fokus default */
+    appearance: none; /* Menghilangkan tampilan default dari elemen select */
+}
+
+.shopcategory-sort select:focus {
+    border-color: #007bff; /* Warna garis saat dalam mode fokus */
+}
+
+.shopcategory-sort label {
+    margin-right: 10px; /* Jarak antara label dan elemen select */
+    font-weight: 600;
+    font-size: 14px; /* Ukuran font sedikit ditingkatkan untuk keterbacaan */
+}
+
+.shopcategory-products{
+    margin: 0px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+}
+@media(max-width:1280px){
+    .shopcategory-banner{
+        margin: 20px auto;
+        width: 90%;
+    }
+    .shopcategory-indexsort{
+        width: 90%;
+        margin: auto;
+    }
+    .shopcategory-sort{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .shopcategory-indexsort p{
+        font-size: 12px;
+    }
+    .shopcategory-products{
+        width: 90%;
+        margin: 10px auto;
+        row-gap: 40px;
+    }
+    .shopcategory-products .item{
+        margin: auto;
+    }
+    .shopcategory-loadmore{
+        margin: 100px auto;
+        width: 200px;
+        height: 60px;
+        font-size: 16x;
+    }
+}
+@media(max-width:800px){
+    .shopcategory-banner{
+        width: 95%;
+    }
+    .shopcategory-products{
+        width: 95%;
+    }
+    .shopcategory-loadmore{
+        margin: 60px auto;
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+@media(max-width:500px){
+    .shopcategory-products{
+        grid-template-columns: 1fr 1fr;
+    }
+}
